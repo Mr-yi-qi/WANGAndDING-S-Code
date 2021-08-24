@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷问题</title>
+    <style>
+        /* 
+            外边距塌陷问题: 嵌套的两个块级元素,当给(第一个)子元素设置向上的外边距后,父元素会跟着掉下来,此时形成了外边距塌陷.
+            解决方案:
+            1.给父元素设置内边距
+            2.给父元素设置上边框
+            3.给父元素设置overflow属性
+            4.给父元素设置浮动
+            5.给子元素设置浮动
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /* border-top:1px solid #000; */
+            overflow: scroll;
+        }
+        .phone{
+            width: 50px;
+            height: 100px;
+            background: blue;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="phone">手机📱1</div>
+        <div class="phone">手机📱2</div>
+    </div>
+</body>
+</html>

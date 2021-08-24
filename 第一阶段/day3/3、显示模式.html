@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        /* 
+            块级显示模式:自己独占一行,设置宽高起作用,在没有设置宽度时,宽度默认和父元素一样
+            块元素: div h1-h6 p ul ol li dl dt dd hr form
+            行内(内联)显示模式: 设置宽高不起作用,宽高被内容撑开,一行可以有多个
+            行内元素: span a b strong i em u ins s del 
+            行内块显示模式:设置宽高起作用,一行可以有多个
+            行内块元素: img 所有表单标签(form除外)
+            
+            行内元素和行内块元素代码在有一个空格或者换行时,会有一个默认的间距
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        h1{
+            /* width: 200px; */
+            height: 200px;
+            background-color: red;
+        }
+        b{
+            width: 1000px;
+            height: 1000px;
+            background-color: yellow;
+        }
+        i{
+            width: 5000px;
+            height: 5000px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <h1></h1>
+    <b>加粗</b><i>倾斜</i><img src="" alt="">
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+				行内块元素横向布局:当给行内块元素设置垂直方向的内外边距时,会对周围的元素造成影响,
+				可以理解为行内块是一个底对齐
+				
+				行内元素垂直内外边距: 行内元素由于是包裹文本的作用,由于文本是沿着基线对齐,所以行内元素
+				垂直方向的内外边距,不起作用
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.one{
+				width: 100px;
+				height: 100px;
+				background: red;
+				/* 浮动 */
+				/* float:left; */
+				display: inline-block;
+			}
+			.two{
+				width: 200px;
+				height: 200px;
+				background: green;
+				/* float:left; */
+				display: inline-block;
+			}
+			.three{
+				width: 300px;
+				height: 300px;
+				background: blue;
+				/* float:left; */
+				display: inline-block;
+			}
+			.four{
+				height: 300px;
+				background: greenyellow;
+			}
+			span,i,b{
+				background: blue;
+			}
+			.five{
+				background: gold;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div> -->
+		<div class="four"></div>
+		<div class="five">
+			<span>span</span>
+			<i>倾斜</i>
+			<b>加粗</b>
+		</div>
+	</body>
+</html>

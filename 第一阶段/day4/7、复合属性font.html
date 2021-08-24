@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合属性font</title>
+    <style>
+        /* 
+            单属性：一个属性名对应
+            复合属性：一个属性名对应多个属性值
+        */
+        /* 
+        font 复合属性，将多个设置文本的单个属性同时设置，注意：字号、字体是必写项
+        */
+
+
+        div{
+            /* 单属性写法 */
+            color: red;
+            /* font-size: 40px;
+            font-family: "宋体";
+            font-weight: 700;
+            font-style: italic;
+            line-height: 80px; */
+
+            background:pink;
+
+            /* 复合属性写法 */
+            /* 倾斜 加粗 字号/行高 字体 */
+            font: italic 700 40px/80px "宋体";
+
+            /* 当font设置属性必须要有 字号 字体 */
+            /* font: "宋体";  会报错*/
+            /* 当单属性和复合属性同时存在,为了避免层叠,要先写复合属性,再写单属性 */
+            font:40px "宋体";
+            line-height: 500px;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div>复合属性font</div>
+</body>
+</html>

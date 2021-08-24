@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合属性border</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* 边框单属性 */
+            /*
+            粗细
+                border-width: 5px;*/
+
+            /* 
+
+            边框样式  
+                实线 : solid
+                虚线 : dashed
+                点状线 : dotted
+
+                border-style:solid;
+            */
+
+            /*
+            边框颜色
+                border-color:red;
+            */
+
+
+            /* 复合属性
+                粗细（默认是3px） 样式（必写）  颜色（默认是黑色）
+            */
+
+            border: 5px solid pink;
+
+            /* 四个角边框 */
+            /* 上边框 */
+            border-top: 10px;
+            /* 下边框 */
+            border-bottom: 15px;
+            /* 右边框 */
+            border-right: 20px;
+            /* 左边框 */
+            border-left: 25px;
+
+            /* 取消边框 */
+            border-bottom: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

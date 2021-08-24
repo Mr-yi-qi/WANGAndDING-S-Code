@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align局中元素</title>
+    <style>
+        /*
+            text-align:center 当给元素设置该属性时,能让元素中的文本,行内元素,行内块元素进行水平居中，居中的是相对于的是自身.
+            当希望一个文本,行内元素,行内块元素水平居中时,要给它的父元素设置.
+        */
+        .one{
+            height: 500px;
+            background-color: pink;
+            text-align: center;
+        }
+        strong{
+            background-color: yellow;
+        }
+        span{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        今天是一年中<strong>最后一天</strong>
+        <img src="" alt="" width="50px" height="50px" back-ground="pink">
+    </div>
+    <span>你们真的听懂了吗？</span>
+</body>
+</html>

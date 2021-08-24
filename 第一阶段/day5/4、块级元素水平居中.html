@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素水平居中</title>
+    <style>
+        /*
+            块元素水平居中: 自身要有固定宽度,给自身设置margin水平方向auto
+        */
+        .box{
+            width: 500px;
+            height: 500px;
+            background: pink;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <i>倾斜</i>
+        <b>加粗</b>
+        <img src="boduo.jpg" width="50">
+        <div class="one"></div>
+    </div>
+</body>
+</html>

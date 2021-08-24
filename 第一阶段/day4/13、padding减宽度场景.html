@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding减宽度场景</title>
+    <style>
+        /* 
+            padding减宽度的场景: 当块元素在没有设置宽度时,此时和父元素宽度一样,再加上水平的padding后,
+            不会撑大盒子,会自动进行计算
+            
+            块元素的默认宽度:块元素的默认宽度和父元素一样,当父元素设置padding后,该元素的宽度是父元素
+            减去padding后的宽度
+        */
+
+        .one{
+				width: 1000px;
+				height: 500px;
+				background: pink;
+				/* padding-left: 200px; */
+			}
+			.two{
+				width: 1000px;
+				height: 300px;
+				background: blue;
+				padding-left: 200px;
+			}
+			.three{
+				height: 500px;
+				background: yellow;
+				padding-left: 200px;
+				padding-right: 200px;
+			}
+			.four{
+				
+				height: 300px;
+				background: yellowgreen;
+			}
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">two</div>
+    </div>
+    <div class="three">
+        <div class="four"></div>
+    </div>
+</body>
+</html>
